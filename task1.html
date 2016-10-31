@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>零基础HTML编码</title>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="normalize.css" charset="utf-8">
+    <link rel="stylesheet" href="task5.css" media="screen" title="no title">
+  </head>
+  <body>
+    <header id="site-header" class="site-header">
+      <h1 class="article-title">
+        <a href="#">网站一级标题</a>
+      </h1>
+      <ul class="nav-ul">
+        <li><a href="#">导航链接一</a></li>
+        <li><a href="#">导航链接二</a></li>
+        <li><a href="#">导航链接三</a></li>
+        <li><a href="#">导航链接四</a></li>
+      </ul>
+    </header>
+    <article id="site-article" class="site-article">
+      <div class="right-side-bar">
+        <section class="article side-bar">
+          <h1 class="side-bar-header">这里以后是一个侧烂，这是侧烂的标题</h1>
+          <h2 class="side-bar-title">测栏注册窗口标题</h2>
+          <div class="side-bar-mail">
+            <span>请输入邮箱地址</span>
+            <input type="email">
+            <span>邮箱地址请按要求格式输入</span>
+          </div>
+          <div class="side-bar-secret">
+            <span>请输入密码</span>
+            <input type="text" value="这是一个文本输入框">
+            <span>请重复输入密码</span>
+            <input type="text" value="这是一个文本输入框">
+            <span>密码请为6-16位英文数字</span>
+          </div>
+          <form class="side-bar-personal-sex">
+            <label for="gender">性别：</label> <!-- label 中 for 元素的内容要与 input 中的id 内容一致。 -->
+            <input type="radio" value="1" name="gender" id="man"/>
+            <label for="man">男</label>
+            <input type="radio" value="2" name="gender" id="woman">
+            <label for="woman">女</label>
+          </form>
+          <form class="personal-city">
+            <label for="city">城市：</label>
+            <select id="city">
+                <option value="北京" selected="selected">北京</option>
+                <option value="上海">上海</option>
+            </select>
+          </form>
+          <form class="personal-hobby" id="hobby"action="index.html" method="post">
+            <label for="hobby">爱好:</label>
+            <input type="checkbox" id="motion">
+            <label for="motion">运动</label>
+            <input type="checkbox" id="art">
+            <label for="art">艺术</label>
+            <input type="checkbox" id="science">
+            <label for="science">科学</label>
+          </form>
+          <div class="personal-describe">
+            <span>个人描述：</span>
+            <textarea name="personal-describe" rows="8" cols="40">
+              这是一个多行输入框，请写入您的个人描述
+            </textarea>
+          </div>
+        </section>
+      </div>
+
+      <div class="left-content">
+        <section class="article para-first">
+          <h1 class="para-first-h1">文章一级标题</h1>
+          <h2 class="para-first-h2">文章二级标题</h2>
+          <div class="para-first-details">
+            <span class="para-first-author">文章作者</span>
+            <time class="para-first-time">文章发表时间</time>
+          </div>
+          <p class="para-first-p">
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+          </p>
+          <img src="./images/task1.png" />
+        </section>
+        <section class="article para-second">
+          <h1 class="para-second-h1">文章一级标题</h1>
+          <h2 class="para-second-h2">文章二级标题</h2>
+          <div class="para-second-details">
+            <span class="para-second-author">文章作者</span>
+            <time class="para-second-time">文章发表时间</time>
+          </div>
+          <p class="para-second-p">
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+          </p>
+          <img src="./images/task1.png"" />
+          <ul para-second-lists>
+            <li class="para-second-item">列表项目一</li>
+            <li class="para-second-item">列表项目二</li>
+            <li class="para-second-item">列表项目三</li>
+          </ul>
+        </section>
+        <section class="article pic">
+          <p>好看的图片</p>
+          <img src="./images/task1.png" />
+          <p>好看的图片</p>
+          <img src="./images/task1.png" />
+          <p>好看的图片</p>
+          <img src="./images/task1.png" />
+          <p>好看的图片</p>
+          <img src="./images/task1.png" />
+          <p>好看的图片</p>
+          <img src="./images/task1.png" />
+        </section>
+        <section class="article content-details">
+          <h1 class="content-details-h1">最后一篇文章一级标题</h1>
+          <h2 class="content-details-h2">文章二级标题</h2>
+          <span class="content-details-author">文章作者</span>
+          <time class="content-details-time">文章发表时间</time>
+          <ol class="content-details-lists">
+            <li class="content-details-item">排名1</li>
+            <li class="content-details-item">排名2</li>
+            <li class="content-details-item">排名3</li>
+          </ol>
+          <table class="content-details-table" border="1">
+            <caption class="content-details-title">下面是一个表格，给表格加了一个 border=1,好让你看出是一个表格</caption>
+            <tr>
+              <th>表头</th>
+              <th>表头</th>
+              <th>表头</th>
+            </tr>
+            <tr>
+              <td>表内容单元格</td>
+              <td>表内容单元格</td>
+              <td>操作</td>
+            </tr>
+            <tr>
+              <td>表内容单元格</td>
+              <td>表内容单元格</td>
+              <td>操作</td>
+            </tr>
+            <tr>
+              <td>表内容单元格</td>
+              <td>表内容单元格</td>
+              <td>操作</td>
+            </tr>
+            <tr>
+              <td>表内容单元格</td>
+              <td>表内容单元格</td>
+              <td>操作</td>
+            </tr>
+            <tr>
+              <td>总计</td>
+              <td>1000</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </article>
+  </body>
+</html>
